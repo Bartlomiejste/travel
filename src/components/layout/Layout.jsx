@@ -1,11 +1,11 @@
 import React from "react";
-import { MainContainer, PageContainer } from "../../ui/Layout/Layout.styled.jsx";
+import { MainContainer } from "../../ui/Layout/Layout.styled.jsx";
 
 const Layout = ({ children }) => {
 
   return (
     <MainContainer>
-      <PageContainer>{children}</PageContainer>
+      {children}
     </MainContainer>
   );
 };

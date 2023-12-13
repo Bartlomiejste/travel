@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 7px;
 }
 
 /* Track */
