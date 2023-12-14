@@ -9,45 +9,58 @@ const SocialMediaWrapper = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  gap: 20px; // dostosuj odstępy
+  gap: 20px;
+  height: 300px;
 `;
 
 const IconWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px; // dostosuj odstępy
+  gap: 20px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  
+  &:hover {
+   color: #33a06d;
+  }
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-  font-size: 24px; // dostosuj wielkość
-  color: #000; // dostosuj kolor
-  &:hover {
-    color: #555; // kolor przy najechaniu
-  }
+  font-size: 44px;
 `;
 
 const ContactText = styled.p`
   margin: 0;
-  font-size: 14px; // dostosuj rozmiar czcionki
+  font-size: 18px;
 `;
 
 const SocialMedia = () => {
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:travel-max@gmail.com';
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+48518107092';
+  };
+
   return (
     <SocialMediaWrapper>
-      <IconWrapper>
+      <IconWrapper onClick={handlePhoneClick}>
         <SocialIcon icon={faPhone} />
-        <ContactText>48 518 107 092</ContactText>
+        <ContactText>+48 518 107 092</ContactText>
       </IconWrapper>
-      <IconWrapper>
+      <IconWrapper onClick={handleEmailClick}>
         <SocialIcon icon={faEnvelope} />
-        <ContactText>matttravel2021@gmail.com</ContactText>
+        <ContactText>travel-max@gmail.com</ContactText>
       </IconWrapper>
-      <IconWrapper>
+      <IconWrapper as="a" href="https://www.facebook.com" target="_blank">
         <SocialIcon icon={faFacebookF} />
         <ContactText>Facebook</ContactText>
       </IconWrapper>
-      <IconWrapper>
+      <IconWrapper as="a" href="https://www.instagram.com" target="_blank">
         <SocialIcon icon={faInstagram} />
         <ContactText>Instagram</ContactText>
       </IconWrapper>
