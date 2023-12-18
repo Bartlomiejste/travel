@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { NavigationContainer, NavigationImg, NavigationName } from '../../ui/Navigation/Navigation.styled';
+import logo from './assets/logo.png'
 
 const Navigation = () => {
+  
   const [activeLink, setActiveLink] = useState('Home');
-  const linksBeforeImage = ['Home', 'O Nas', 'Wycieczki'];
+
+  const linksBeforeImage = ['Home', 'Wycieczki', 'O Nas'];
   const linksAfterImage = ['Galeria', 'Kontakt', 'Koszyk'];
 
   return (
@@ -17,7 +20,7 @@ const Navigation = () => {
           {name}
         </NavigationName>
       ))}
-      <NavigationImg src='./logo.png' />
+      <NavigationImg src={logo} />
       {linksAfterImage.map((name) => (
         <NavigationName
           key={name}

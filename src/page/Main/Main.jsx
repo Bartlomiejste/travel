@@ -1,17 +1,21 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
-import Navigation from '../../components/Navigation/Navigation'
 import Header from '../../components/Header/Header'
 import SocialMedia from '../../components/SocialMedia/SocialMedia'
 import Travel from '../../components/Travel/Travel'
+import AboutUs from '../../components/AboutUs/AboutUs'
+import TravelVideo from '../../components/TravelVideo/TravelVideo'
+import MapView from '../../components/MapView/MapView'
 
 const Main = () => {
   return (
   <Layout>
-    <Navigation/>
     <Header/>
     <SocialMedia/>
     <Travel/>
+    <AboutUs/>
+    <TravelVideo/>
+    <MapView/>
   </Layout>
   )
 }

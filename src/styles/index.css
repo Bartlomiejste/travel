@@ -17,5 +17,26 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray;
+  background: #33a06d;
+}
+
+/*Hover on opinion carousel (arrow and dots)*/
+.react-multi-carousel-list .react-multiple-carousel__arrow {
+  &:hover {
+    background-color: #33a06d !important;
+  }
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow {
+  &:hover {
+    background-color: #33a06d !important;
+  }
+}
+
+.react-multi-carousel-dot button {
+  background: transparent !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #33a06d !important;
 }

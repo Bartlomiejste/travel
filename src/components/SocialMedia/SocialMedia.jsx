@@ -1,40 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
-const SocialMediaWrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-  height: 300px;
-`;
-
-const IconWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
-  color: #000;
-  text-decoration: none;
-  
-  &:hover {
-   color: #33a06d;
-  }
-`;
-
-const SocialIcon = styled(FontAwesomeIcon)`
-  font-size: 44px;
-`;
-
-const ContactText = styled.p`
-  margin: 0;
-  font-size: 18px;
-`;
+import { ContactText, IconWrapper, SocialIcon, SocialMediaWrapper } from '../../ui/SocialMedia/SocialMedia.styled';
 
 const SocialMedia = () => {
 
