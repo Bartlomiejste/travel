@@ -7,7 +7,6 @@ export const MapViewContainer = styled.div`
   margin: -4px;
   align-items: center;
   background-color: #F8F1E9;
-  margin-bottom: 50px;
   padding: 70px;
 `
 export const MapViewTitle = styled.h2`

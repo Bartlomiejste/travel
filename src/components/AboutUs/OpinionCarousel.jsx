@@ -7,19 +7,19 @@ import { Opinion, OpinionAuthor, OpinionContainer, OpinionText, OpinionTitle } f
 const opinions = [
     { 
       text: "100% zaangażowania w organizację, profesjonalizm, a do tego niesamowici opiekunowie. Z nimi niczego nie zabraknie. Polecam!!!",
-      author: "ALEKSANDRA Z WARSZAWY"
+      author: "Aleksandra z Warszawy"
     },
     {
         text: "Nieziemskie widoki, fantastyczna atmosfera i bezproblemowy przebieg każdej wyprawy. To była podróż życia!",
-        author: "JAKUB Z KRAKOWA"
+        author: "Jakub z Krakowa"
       },
       {
         text: "Nie zapomnę chwil spędzonych z Travel-Max. Każdy szczegół był dopracowany, a obsługa na najwyższym poziomie.",
-        author: "MARTYNA Z POZNANIA"
+        author: "Martyna z Poznania"
       },
       {
         text: "Travel-Max przekroczył moje najśmielsze oczekiwania. Profesjonalna organizacja i pełne zaangażowanie.",
-        author: "TOMASZ Z GDANSKA"
+        author: "Tomasz z Gdańska"
       }      
   ];
 

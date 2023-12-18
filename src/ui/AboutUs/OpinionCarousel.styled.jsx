@@ -24,6 +24,7 @@ export const OpinionText = styled.p`
     font-style: italic;
 `
 export const OpinionAuthor = styled.div`
+    text-transform: uppercase;
     padding:20px;
     width:100%;
     text-align:center;

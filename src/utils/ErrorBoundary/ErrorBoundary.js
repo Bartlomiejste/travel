@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ErrorBoundaryUI from "./ErrorBoundary.styled.jsx";
+import ErrorBoundaryUI from "./ErrorBoundaryRefresh.jsx";
 
 class ErrorBoundary extends Component {
   constructor(props) {
