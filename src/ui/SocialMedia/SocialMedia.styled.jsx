@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { styled } from "styled-components";
+import { M_DOWN, T_DOWN} from "../../utils/viewport";
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
@@ -8,6 +9,12 @@ export const SocialMediaWrapper = styled.div`
   width: 100%;
   gap: 20px;
   height: 300px;
+
+  @media ${M_DOWN} {
+        margin: 90px 0;
+        height: auto;
+        flex-direction: column;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -26,9 +33,23 @@ export const IconWrapper = styled.div`
 
 export const SocialIcon = styled(FontAwesomeIcon)`
   font-size: 44px;
+
+  @media ${M_DOWN} {
+    font-size: 20px;
+  }
+
+  
+  @media ${T_DOWN} {
+    font-size: 30px;
+  }
+  
 `;
 
 export const ContactText = styled.p`
   margin: 0;
   font-size: 18px;
+
+  @media ${M_DOWN} {
+    font-size: 10px;
+  }
 `;

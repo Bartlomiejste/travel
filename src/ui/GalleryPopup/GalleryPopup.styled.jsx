@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { M_DOWN, T_DOWN } from '../../utils/viewport';
 
 export const GalleryModalContainer = styled.div`
   position: fixed;
@@ -9,7 +10,10 @@ export const GalleryModalContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10000; 
+  z-index: 10000;
+
+
+  
 `;
 
 export const GalleryGrid = styled.div`
@@ -21,6 +25,10 @@ export const GalleryGrid = styled.div`
   width: 900px;
   height: 700px;
   object-fit: cover;
+
+  @media ${M_DOWN} {
+    height: 400px;
+  }
 
 `
 export const CloseButton = styled.button`

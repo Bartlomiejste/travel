@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { M_DOWN } from "../../utils/viewport";
 
 export const CartContainer = styled.div`
   margin-top: 120px;
@@ -6,6 +7,10 @@ export const CartContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 700px;
+
+  @media ${M_DOWN} {
+    font-size:8px;
+  }
 `;
 
 export const CartContent = styled.div`
@@ -35,5 +40,9 @@ export const ReturnButton = styled.button`
 
   &:hover {
     background-color: #33a06d;
+  }
+
+  @media ${M_DOWN} {
+    font-size:8px;
   }
 `;

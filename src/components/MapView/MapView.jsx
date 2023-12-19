@@ -26,6 +26,7 @@ const MapView = () => {
     <MapViewContainer>
       <MapViewTitle>Mapa wyjazdów naszych klientów</MapViewTitle>
       <Map
+      class="mapContainerClass"
         mapboxAccessToken="pk.eyJ1IjoiemVicmFhYSIsImEiOiJjbHFhMjEyNGsxbTdnMmxudnk1bHp4NHRnIn0.eMEasNYxewpWGNlKz3S54w"
         style={{
           width: "1000px",

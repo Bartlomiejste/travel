@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { M_DOWN, T_DOWN } from "../../utils/viewport";
 
 export const ContactModalContainer = styled.div`
   position: fixed;
@@ -11,6 +12,11 @@ export const ContactModalContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 10000;
   align-items: center;
+
+  @media ${M_DOWN} {
+    padding: 10px;
+    font-size:10px;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -32,6 +38,10 @@ export const StyledInput = styled.input`
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 16px;
+
+  @media ${M_DOWN} {
+    font-size:10px;
+  }
 `;
 
 export const StyledTextarea = styled.textarea`
@@ -40,6 +50,10 @@ export const StyledTextarea = styled.textarea`
   border: 1px solid #ddd;
   font-size: 16px;
   height: 100px;
+
+  @media ${M_DOWN} {
+    font-size:10px;
+  }
 `;
 
 export const SubmitButton = styled.button`
@@ -54,6 +68,10 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: #45a049;
+  }
+
+  @media ${M_DOWN} {
+    font-size:10px;
   }
 `;
 

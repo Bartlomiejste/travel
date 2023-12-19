@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { Opinion, OpinionAuthor, OpinionContainer, OpinionText, OpinionTitle } from '../../ui/AboutUs/OpinionCarousel.styled';
 
 
+
 const opinions = [
     { 
       text: "100% zaangażowania w organizację, profesjonalizm, a do tego niesamowici opiekunowie. Z nimi niczego nie zabraknie. Polecam!!!",
