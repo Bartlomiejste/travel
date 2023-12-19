@@ -1,7 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import OurTeam from './assets/OurTeam.png'
+import OurTeam from '../../assets/aboutUs/OurTeam.png'
 import aboutUsContent from './aboutUsContent.json'
 import OpinionCarousel from './OpinionCarousel';
 import { AboutUsContainer, AboutUsImg, AboutUsImgContainer, AboutUsInfo, AboutUsParagraph, AboutUsText, AboutUsTitle } from '../../ui/AboutUs/AboutUs.styled';

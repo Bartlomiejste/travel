@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavigationContainer, NavigationImg, NavigationName } from '../../ui/Navigation/Navigation.styled';
-import logo from './assets/logo.png';
+import logo from '../../assets/logo/logo.png'
 import { Link as ScrollLink } from 'react-scroll';
 import GalleryPopup from '../GalleryPopup/GalleryPopup';
 

@@ -6,6 +6,7 @@ import Map, {
   GeolocateControl,
 } from "react-map-gl";
 import { MapViewContainer, MapViewTitle, MarkerImg } from "../../ui/MapView/MapView.styled";
+import Img from '../../assets/mapView/markerMap.png';
 
 const MapView = () => {
 
@@ -38,7 +39,7 @@ const MapView = () => {
       >
     {places.map((place, index) => (
     <Marker key={index} latitude={place.lat} longitude={place.lng}>
-         <MarkerImg src="../assets/mapView/markerMap.png" alt="Marker" title={place.name}/>
+         <MarkerImg src={Img} alt="Marker" title={place.name}/>
     </Marker>
     ))}
         <NavigationControl position="bottom-right" />

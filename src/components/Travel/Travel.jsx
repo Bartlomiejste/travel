@@ -3,14 +3,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { TravelCaption, TravelContainer, TravelImage, TravelImageWrapper, TravelTitle, TravelWrapper } from '../../ui/Travel/Travel.styled';
 import { useNavigate } from 'react-router-dom';
+import travel4 from "../../assets/travel/4.png"
+import travel5 from "../../assets/travel/5.png"
+import travel6 from "../../assets/travel/6.png"
+import travel7 from "../../assets/travel/7.png"
+import travel8 from "../../assets/travel/8.png"
+import travel9 from "../../assets/travel/9.png"
 
 const photos = [
-    { src: '../assets/travel/4.png', caption: 'Chwile we dwoje' },
-    { src: '../assets/travel/5.png', caption: 'Chwile z rodziną' },
-    { src: '../assets/travel/6.png', caption: 'Chwile na plaży' },
-    { src: '../assets/travel/7.png', caption: 'Chwile w samotności' },
-    { src: '../assets/travel/8.png', caption: 'Chwile w Afryce' },
-    { src: '../assets/travel/9.png', caption: 'Chwile z Naturą' },
+    { src: travel4, caption: 'Chwile we dwoje' },
+    { src: travel5, caption: 'Chwile z rodziną' },
+    { src: travel6, caption: 'Chwile na plaży' },
+    { src: travel7, caption: 'Chwile w samotności' },
+    { src: travel8, caption: 'Chwile w Afryce' },
+    { src: travel9, caption: 'Chwile z Naturą' },
   ];
 
 const Travel = () => {

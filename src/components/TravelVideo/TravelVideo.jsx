@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Video, VideoContainer } from '../../ui/TravelVideo/TravelVideo.styled';
-
+import video from '../../assets/video/1.mp4';
 
 const TravelVideo = () => {
   const videoRef = useRef(null);
@@ -30,7 +30,7 @@ const TravelVideo = () => {
   return (
     <VideoContainer>
       <Video ref={videoRef} muted loop preload="none" autoPlay playsInline >
-        <source src='../assets/video/1.mp4' type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </Video>
     </VideoContainer>
   );
