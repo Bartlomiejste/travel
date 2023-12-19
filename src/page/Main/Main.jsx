@@ -8,6 +8,7 @@ import TravelVideo from '../../components/TravelVideo/TravelVideo'
 import MapView from '../../components/MapView/MapView'
 
 const Main = () => {
+
   return (
   <Layout>
     <Header/>

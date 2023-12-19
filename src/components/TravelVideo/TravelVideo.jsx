@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Video, VideoContainer } from '../../ui/TravelVideo/TravelVideo.styled';
 
 
-
 const TravelVideo = () => {
   const videoRef = useRef(null);
 

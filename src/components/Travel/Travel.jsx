@@ -2,6 +2,7 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { TravelCaption, TravelContainer, TravelImage, TravelImageWrapper, TravelTitle, TravelWrapper } from '../../ui/Travel/Travel.styled';
+import { useNavigate } from 'react-router-dom';
 
 const photos = [
     { src: '../assets/travel/4.png', caption: 'Chwile we dwoje' },
@@ -14,13 +15,20 @@ const photos = [
 
 const Travel = () => {
   AOS.init();
+
+  AOS.init();
+  const navigate = useNavigate(); 
+
+  const goToTripDetails = (tripId) => {
+    navigate(`/trip/${tripId}`);
+  };
     
   return (
 <TravelWrapper id="travel">
       <TravelTitle data-aos="fade-up" data-aos-offset="400"> Wyjedź z nami na maxa!</TravelTitle>
     <TravelContainer>
       {photos.map((photo, index) => (
-        <TravelImageWrapper key={index}>
+        <TravelImageWrapper key={index} onClick={() => goToTripDetails(index)}>
           <TravelImage src={photo.src} alt={`${"Chwile natury nr " + index}`} />
           <TravelCaption className="caption">{photo.caption}</TravelCaption>
         </TravelImageWrapper>

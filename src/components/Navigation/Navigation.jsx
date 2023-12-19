@@ -24,7 +24,8 @@ import large_7 from '../GalleryPopup/gallery/large/large_7.png';
 import large_8 from '../GalleryPopup/gallery/large/large_8.png';
 import large_9 from '../GalleryPopup/gallery/large/large_9.png';
 import ContactPopup from '../ContactPopup/ContactPopup';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const photos = [
   { small: small_1, large: large_1, alt: 'GalleryPhoto' },
@@ -42,8 +43,21 @@ const Navigation = () => {
   const [activeLink, setActiveLink] = useState('Home');
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-
+  
   const navigate=useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash === '#travel') {
+      const element = document.getElementById('travel');
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [location]);
 
   const linksBeforeLogo = {
     'Home': '/',
@@ -89,7 +103,7 @@ const Navigation = () => {
           </ScrollLink>
         ))}
         <NavigationImg src={logo} alt="Logo" />
-        {Object.entries(linksAfterLogo).map(([name, target]) => (
+        {Object.entries(linksAfterLogo).map(([name]) => (
           <NavigationName
             key={name}
             onClick={() => handleLinkClick(name)}
